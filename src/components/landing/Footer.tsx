@@ -36,7 +36,7 @@ export default function Footer() {
       style={{
         padding: "80px 0 40px",
         background: "var(--sage-50)",
-        borderTop: "1px solid rgba(200, 217, 111, 0.3)",
+        borderTop: "1px solid rgba(252, 118, 67, 0.2)",
       }}
     >
       <div className="container-main">
@@ -134,7 +134,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div
           style={{
-            borderTop: "1px solid rgba(200, 217, 111, 0.3)",
+            borderTop: "1px solid rgba(252, 118, 67, 0.2)",
             paddingTop: 24,
             display: "flex",
             justifyContent: "space-between",

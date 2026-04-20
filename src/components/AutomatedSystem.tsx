@@ -34,12 +34,12 @@ export default function ReceptionQRSection() {
     const imageY = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
 
     return (
-        <section className="relative w-full bg-[#f1f7ed] py-20 px-4 md:px-8 lg:px-12">
+        <section className="relative w-full bg-[#fff4ee] py-20 px-4 md:px-8 lg:px-12">
 
             {/* Etiqueta Superior fuera del contenedor para dar contexto */}
             <div className="max-w-[1400px] mx-auto mb-8 px-4 flex justify-center md:justify-start">
-                <span className="border border-[#1a3831]/20 bg-[#eef67a] px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest flex items-center gap-2 text-[#1a3831] shadow-sm w-fit">
-                    <QrCode size={16} className="text-[#E07A5F]" /> El Gran Día
+                <span className="border border-[#2a1714]/20 bg-[#fcdbd0] px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest flex items-center gap-2 text-[#2a1714] shadow-sm w-fit">
+                    <QrCode size={16} className="text-[#fc7643]" /> El Gran Día
                 </span>
             </div>
 
@@ -54,13 +54,13 @@ export default function ReceptionQRSection() {
                     className="absolute inset-0 w-full h-[140%] -top-[20%]"
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2000&auto=format&fit=crop"
+                        src="/imagenes-horizontales/11.png"
                         alt="Recepción elegante de un evento"
                         className="w-full h-full object-cover"
                     />
                     {/* Gradientes oscuros para asegurar la legibilidad perfecta del texto */}
                     <div className="absolute inset-0 bg-black/40" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#113227]/80 via-transparent to-[#113227]/90" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#ce5a4e]/80 via-transparent to-[#ce5a4e]/90" />
                 </motion.div>
 
                 {/* Contenido Superior (Textos y Botón) */}
@@ -87,9 +87,9 @@ export default function ReceptionQRSection() {
                                 transition={{ duration: 0.6, delay: 0.2 }}
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="bg-[#E07A5F] hover:bg-[#c96950] transition-colors text-white rounded-full pl-4 pr-7 py-2.5 flex items-center gap-3 font-bold text-base cursor-pointer shadow-xl group"
+                                className="bg-[#fc7643] hover:bg-[#d95a2b] transition-colors text-white rounded-full pl-4 pr-7 py-2.5 flex items-center gap-3 font-bold text-base cursor-pointer shadow-xl group"
                             >
-                                <div className="bg-white text-[#E07A5F] rounded-full p-1.5 flex items-center justify-center transition-transform group-hover:rotate-45">
+                                <div className="bg-white text-[#fc7643] rounded-full p-1.5 flex items-center justify-center transition-transform group-hover:rotate-45">
                                     <ArrowUpRight size={18} strokeWidth={2.5} />
                                 </div>
                                 Organizar mis invitados
@@ -135,12 +135,12 @@ export default function ReceptionQRSection() {
                                 className="bg-white rounded-[2rem] p-8 md:p-10 flex flex-col text-left shadow-[0_30px_60px_rgba(0,0,0,0.3)] border border-white/20 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300"
                             >
                                 {/* Pequeño acento visual en la esquina superior */}
-                                <div className="absolute top-0 right-0 w-24 h-24 bg-[#eef67a]/30 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:bg-[#E07A5F]/20 transition-colors duration-500"></div>
+                                <div className="absolute top-0 right-0 w-24 h-24 bg-[#fcdbd0]/30 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:bg-[#fc7643]/20 transition-colors duration-500"></div>
 
-                                <span className="text-[#E07A5F] font-serif text-5xl md:text-6xl font-light tracking-tighter mb-6">
+                                <span className="text-[#fc7643] font-serif text-5xl md:text-6xl font-light tracking-tighter mb-6">
                                     {card.number}
                                 </span>
-                                <h3 className="text-[#113227] font-serif text-3xl md:text-4xl tracking-tight mb-4 leading-none">
+                                <h3 className="text-[#ce5a4e] font-serif text-3xl md:text-4xl tracking-tight mb-4 leading-none">
                                     {card.title}
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed font-medium">

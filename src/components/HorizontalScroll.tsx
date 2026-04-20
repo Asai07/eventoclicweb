@@ -9,7 +9,7 @@ const CARDS = [
         id: 1,
         title: "Tu lista de invitados bajo control",
         description: "Conoce el número real de asistentes, el nombre de cada invitado confirmado y la distribución exacta entre adultos y niños.",
-        image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1200&auto=format&fit=crop", // Evento elegante
+        image: "/imagenes-horizontales/INVITADOS-EVENTOCLICCOM.png", // Evento elegante
         icon: Users,
         widgetTitle: "ASISTENCIA REAL",
         widgetMainVal: "145",
@@ -25,7 +25,7 @@ const CARDS = [
         id: 2,
         title: "Catering sin contratiempos",
         description: "Anticípate recopilando la selección de menú de cada invitado y ten mapeadas las alergias o dietas especiales.",
-        image: "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1200&auto=format&fit=crop", // Comida gourmet
+        image: "/imagenes-horizontales/CATERING-EVENTOCLICCOM.png", // Comida gourmet
         icon: Utensils,
         widgetTitle: "REPORTE DE MENÚS",
         widgetMainVal: "100%",
@@ -41,7 +41,7 @@ const CARDS = [
         id: 3,
         title: "Coordinación milimétrica",
         description: "Con esta información clara, puedes coordinar cada aspecto del evento. Cuando los detalles se preparan con tiempo, la experiencia es inolvidable.",
-        image: "https://images.unsplash.com/photo-1530103862676-de8892ebe6c4?q=80&w=1200&auto=format&fit=crop", // Brindis / Celebración
+        image: "/imagenes-horizontales/LOGISTICA-EVENTOCLICCOM.png", // Brindis / Celebración
         icon: Sparkles,
         widgetTitle: "ESTADO DEL EVENTO",
         widgetMainVal: "Listo",
@@ -93,22 +93,22 @@ export default function HorizontalScroll() {
     const imageScale = useTransform(smoothZoom, [0, 0.8], [1.2, 1]);
 
     return (
-        <div className="w-full bg-[#f1f7ed] flex flex-col">
+        <div className="w-full bg-[#fff4ee] flex flex-col">
 
             {/* INTRODUCCIÓN DE LA SECCIÓN */}
             <section className="pt-24 pb-12 px-6 max-w-4xl mx-auto text-center flex flex-col items-center">
-                <span className="border border-[#1a3831]/20 bg-[#eef67a] px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6 flex items-center gap-2 text-[#1a3831]">
+                <span className="border border-[#2a1714]/20 bg-[#fcdbd0] px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6 flex items-center gap-2 text-[#2a1714]">
                     <span className="text-[10px]">⎋</span> El Anfitrión Perfecto
                 </span>
-                <h2 className="text-4xl md:text-6xl font-serif font-medium leading-[1.1] tracking-tight mb-6 text-[#113227]">
+                <h2 className="text-4xl md:text-6xl font-serif font-medium leading-[1.1] tracking-tight mb-6 text-[#ce5a4e]">
                     El efecto wow comienza <br className="hidden md:block" /> antes del evento
                 </h2>
-                <p className="text-lg md:text-xl text-[#113227]/80 max-w-2xl leading-relaxed mb-8">
+                <p className="text-lg md:text-xl text-[#ce5a4e]/80 max-w-2xl leading-relaxed mb-8">
                     Un gran anfitrión se anticipa. Nuestro Centro de Control te permite conocer con anticipación información importante de tus invitados para que todo salga perfecto.
                 </p>
 
                 {/* CTA SECUNDARIO */}
-                <button className="border-2 border-[#113227] text-[#113227] px-6 py-2.5 rounded-full flex items-center gap-3 font-semibold text-sm hover:bg-[#113227] hover:text-white transition-all group cursor-pointer">
+                <button className="border-2 border-[#ce5a4e] text-[#ce5a4e] px-6 py-2.5 rounded-full flex items-center gap-3 font-semibold text-sm hover:bg-[#ce5a4e] hover:text-white transition-all group cursor-pointer">
                     Ver cómo funciona
                     <ArrowUpRight size={18} strokeWidth={2.5} className="transition-transform group-hover:rotate-45" />
                 </button>
@@ -126,12 +126,12 @@ export default function HorizontalScroll() {
                         {CARDS.map((card) => {
                             const Icon = card.icon;
                             return (
-                                <div key={card.id} className="w-[92vw] max-w-[1250px] shrink-0 h-[80vh] max-h-[700px] bg-[#113227] rounded-[2.5rem] flex flex-col lg:flex-row relative shadow-2xl overflow-visible">
+                                <div key={card.id} className="w-[92vw] max-w-[1250px] shrink-0 h-[80vh] max-h-[700px] bg-[#ce5a4e] rounded-[2.5rem] flex flex-col lg:flex-row relative shadow-2xl overflow-visible">
 
                                     {/* COLUMNA IZQUIERDA: Textos y Botón CTA PRINCIPAL */}
                                     <div className="w-full lg:w-[45%] flex flex-col justify-center items-start p-10 lg:p-16 z-10">
-                                        <div className="w-12 h-12 bg-[#eef67a] rounded-full flex items-center justify-center mb-6">
-                                            <Icon className="text-[#113227]" size={24} />
+                                        <div className="w-12 h-12 bg-[#fcdbd0] rounded-full flex items-center justify-center mb-6">
+                                            <Icon className="text-[#ce5a4e]" size={24} />
                                         </div>
                                         <h3 className="text-4xl md:text-5xl lg:text-5xl font-serif text-white font-medium leading-[1.1] tracking-tight mb-6 pr-4">
                                             {card.title}
@@ -141,8 +141,8 @@ export default function HorizontalScroll() {
                                         </p>
 
                                         {/* CTA PRIMARIO */}
-                                        <button className="bg-[#E07A5F] text-white pl-3 pr-7 py-2.5 rounded-full flex items-center gap-4 font-bold text-sm hover:bg-[#c96950] transition-colors shadow-lg group cursor-pointer">
-                                            <div className="bg-white text-[#E07A5F] rounded-full p-1.5 flex items-center justify-center transition-transform group-hover:rotate-45">
+                                        <button className="bg-[#fc7643] text-white pl-3 pr-7 py-2.5 rounded-full flex items-center gap-4 font-bold text-sm hover:bg-[#d95a2b] transition-colors shadow-lg group cursor-pointer">
+                                            <div className="bg-white text-[#fc7643] rounded-full p-1.5 flex items-center justify-center transition-transform group-hover:rotate-45">
                                                 <ArrowUpRight size={18} strokeWidth={2.5} />
                                             </div>
                                             Organizar mis invitados
@@ -165,10 +165,10 @@ export default function HorizontalScroll() {
                                         <div className="hidden lg:flex absolute left-[-10%] top-1/2 -translate-y-1/2 bg-white rounded-[1.5rem] p-6 shadow-[0_30px_60px_rgba(0,0,0,0.25)] w-[320px] z-20 flex-col border border-gray-100">
 
                                             <div className="text-center mb-4">
-                                                <div className="text-[10px] font-bold text-[#E07A5F] uppercase tracking-widest mb-1.5 flex items-center justify-center gap-1">
-                                                    {card.widgetTitle} <span className="w-3.5 h-3.5 rounded-full bg-[#E07A5F]/10 flex items-center justify-center text-[9px] text-[#E07A5F] font-serif">i</span>
+                                                <div className="text-[10px] font-bold text-[#fc7643] uppercase tracking-widest mb-1.5 flex items-center justify-center gap-1">
+                                                    {card.widgetTitle} <span className="w-3.5 h-3.5 rounded-full bg-[#fc7643]/10 flex items-center justify-center text-[9px] text-[#fc7643] font-serif">i</span>
                                                 </div>
-                                                <div className="text-4xl font-medium tracking-tight text-[#113227] flex justify-center items-baseline gap-1">
+                                                <div className="text-4xl font-medium tracking-tight text-[#ce5a4e] flex justify-center items-baseline gap-1">
                                                     {card.widgetMainVal} <span className="text-xl text-gray-400 font-normal">{card.widgetSubVal}</span>
                                                 </div>
                                             </div>
@@ -177,14 +177,14 @@ export default function HorizontalScroll() {
                                             <div className="flex justify-between items-center border-y border-gray-100 py-3 mb-5">
                                                 {card.stats.map((stat, idx) => (
                                                     <div key={idx} className={`flex-1 text-center ${idx !== 2 ? 'border-r border-gray-100' : ''}`}>
-                                                        <div className="font-bold text-[#113227] text-lg leading-none">{stat.val}</div>
+                                                        <div className="font-bold text-[#ce5a4e] text-lg leading-none">{stat.val}</div>
                                                         <div className="text-[9px] text-gray-500 uppercase font-semibold mt-1">{stat.label}</div>
                                                     </div>
                                                 ))}
                                             </div>
 
                                             {/* Botón secundario del widget */}
-                                            <button className="w-full bg-[#f1f7ed] hover:bg-[#e2eadd] text-[#113227] transition-colors py-3 rounded-xl font-semibold text-sm border border-[#113227]/10">
+                                            <button className="w-full bg-[#fff4ee] hover:bg-[#fce5db] text-[#ce5a4e] transition-colors py-3 rounded-xl font-semibold text-sm border border-[#ce5a4e]/10">
                                                 {card.btnText}
                                             </button>
 

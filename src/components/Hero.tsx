@@ -15,7 +15,7 @@ export default function Hero() {
                 playsInline
                 className="absolute inset-0 w-full h-full object-cover z-0"
             >
-                <source src="https://www.pexels.com/es-es/download/video/32126790/" type="video/mp4" />
+                <source src="/video-hero/EVENTOCLIC-HOME.mp4" type="video/mp4" />
             </video>
 
             {/* Dark Gradient / Overlay to ensure text readability */}
@@ -55,17 +55,17 @@ export default function Hero() {
                     className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 w-full px-4"
                 >
                     {/* Button 1: Dark Green */}
-                    <button className="bg-[#16554a] text-white px-6 sm:px-8 py-3.5 rounded-full flex items-center justify-center gap-4 font-medium hover:-translate-y-1 hover:shadow-lg transition-all duration-300 w-full sm:w-auto overflow-hidden group cursor-pointer">
+                    <button className="bg-[#ce5a4e] text-white px-6 sm:px-8 py-3.5 rounded-full flex items-center justify-center gap-4 font-medium hover:-translate-y-1 hover:shadow-lg transition-all duration-300 w-full sm:w-auto overflow-hidden group cursor-pointer">
                         <span className="relative z-10 transition-transform group-hover:scale-105">Organizar mis invitados</span>
-                        <div className="bg-white text-[#16554a] rounded-full p-1 flex items-center justify-center transition-transform group-hover:rotate-45 relative z-10">
+                        <div className="bg-white text-[#ce5a4e] rounded-full p-1 flex items-center justify-center transition-transform group-hover:rotate-45 relative z-10">
                             <ArrowUpRight size={18} strokeWidth={2.5} />
                         </div>
                     </button>
 
                     {/* Button 2: White with Terracotta */}
-                    <button className="bg-white text-[#1a3831] px-6 sm:px-8 py-3.5 rounded-full flex items-center justify-center gap-4 font-medium hover:-translate-y-1 hover:shadow-lg transition-all duration-300 w-full sm:w-auto group cursor-pointer">
+                    <button className="bg-white text-[#2a1714] px-6 sm:px-8 py-3.5 rounded-full flex items-center justify-center gap-4 font-medium hover:-translate-y-1 hover:shadow-lg transition-all duration-300 w-full sm:w-auto group cursor-pointer">
                         <span className="transition-transform group-hover:scale-105">Ver cómo funciona</span>
-                        <div className="bg-[#E07A5F] text-white rounded-full p-1 flex items-center justify-center transition-transform group-hover:rotate-45">
+                        <div className="bg-[#fc7643] text-white rounded-full p-1 flex items-center justify-center transition-transform group-hover:rotate-45">
                             <ArrowUpRight size={18} strokeWidth={2.5} />
                         </div>
                     </button>

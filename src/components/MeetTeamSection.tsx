@@ -10,7 +10,7 @@ const ROTATING_AVATARS = [
         orbitSize: "w-[300px] h-[300px] md:w-[450px] md:h-[450px]",
         duration: 25,
         startAngle: 0,
-        img: "https://i.pravatar.cc/150?img=68",
+        img: "/circulos-girando/1.png",
         status: "Acaba de confirmar",
         positionClass: "top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
     },
@@ -19,7 +19,7 @@ const ROTATING_AVATARS = [
         orbitSize: "w-[450px] h-[450px] md:w-[650px] md:h-[650px]",
         duration: 35,
         startAngle: 120,
-        img: "https://i.pravatar.cc/150?img=47",
+        img: "/circulos-girando/2.png",
         status: "Asistirá con 3 invitados",
         positionClass: "bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"
     },
@@ -28,7 +28,7 @@ const ROTATING_AVATARS = [
         orbitSize: "w-[600px] h-[600px] md:w-[850px] md:h-[850px]",
         duration: 45,
         startAngle: 240,
-        img: "https://i.pravatar.cc/150?img=32",
+        img: "/circulos-girando/3.png",
         status: "Declinó asistencia",
         positionClass: "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2"
     },
@@ -37,7 +37,7 @@ const ROTATING_AVATARS = [
         orbitSize: "w-[750px] h-[750px] md:w-[1050px] md:h-[1050px]",
         duration: 55,
         startAngle: 60,
-        img: "https://i.pravatar.cc/150?img=12",
+        img: "/circulos-girando/4.png",
         status: "Asignado a Mesa 3",
         positionClass: "top-1/2 right-0 translate-x-1/2 -translate-y-1/2"
     }
@@ -70,7 +70,7 @@ export default function LiveExperienceSection() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="text-[#113227] font-serif text-5xl md:text-[5rem] leading-[1.05] tracking-tight mb-6"
+                        className="text-[#ce5a4e] font-serif text-5xl md:text-[5rem] leading-[1.05] tracking-tight mb-6"
                     >
                         Mira cómo tu lista<br className="hidden md:block" /> cobra vida
                     </motion.h2>
@@ -110,11 +110,11 @@ export default function LiveExperienceSection() {
                                     {avatar.status.includes('Declinó') ? (
                                         <div className="w-2.5 h-2.5 rounded-full bg-red-400 animate-pulse" />
                                     ) : avatar.status.includes('Mesa') ? (
-                                        <div className="w-2.5 h-2.5 rounded-full bg-[#E07A5F]" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#fc7643]" />
                                     ) : (
                                         <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
                                     )}
-                                    <span className="text-xs md:text-sm font-bold text-[#113227]">{avatar.status}</span>
+                                    <span className="text-xs md:text-sm font-bold text-[#ce5a4e]">{avatar.status}</span>
                                 </div>
                             </motion.div>
                         </motion.div>
@@ -126,16 +126,16 @@ export default function LiveExperienceSection() {
             <div className="relative z-20 w-full px-6 md:px-12 lg:px-16 xl:px-24">
 
                 {/* MAIN ROUNDED GREEN BOX
-                    - background: #113227
+                    - background: #ce5a4e
                     - rounded: [3rem]
                     - overflow-hidden (CRUCIAL: needed for the marquee to hide as it goes to edge)
                     - flex flex-col (to stack top content and bottom marquee)
                     - pt-8 md:pt-16 (Padding only top, content on sides will align with standard page px padding)
                 */}
-                <div className="bg-[#113227] rounded-[3rem] overflow-hidden w-full max-w-[1400px] mx-auto flex flex-col shadow-2xl relative pt-8 md:pt-16">
+                <div className="bg-[#ce5a4e] rounded-[3rem] overflow-hidden w-full max-w-[1400px] mx-auto flex flex-col shadow-2xl relative pt-8 md:pt-16">
 
                     {/* Acento visual difuminado de fondo */}
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-[#eef67a]/10 rounded-full blur-[100px] pointer-events-none"></div>
+                    <div className="absolute top-0 right-0 w-96 h-96 bg-[#fcdbd0]/10 rounded-full blur-[100px] pointer-events-none"></div>
 
                     {/* TOP CONTENT (TEXT & BUTTON)
                         - px-8 md:px-16 (Internal content padding for text/button alignment)
@@ -170,9 +170,9 @@ export default function LiveExperienceSection() {
                             viewport={{ once: true }}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-[#E07A5F] hover:bg-[#c96950] transition-colors text-white rounded-full pl-5 pr-7 py-3.5 flex items-center gap-4 font-bold text-lg cursor-pointer shadow-xl shrink-0 group"
+                            className="bg-[#fc7643] hover:bg-[#d95a2b] transition-colors text-white rounded-full pl-5 pr-7 py-3.5 flex items-center gap-4 font-bold text-lg cursor-pointer shadow-xl shrink-0 group"
                         >
-                            <div className="bg-white text-[#E07A5F] rounded-full p-1.5 flex items-center justify-center transition-transform group-hover:rotate-45">
+                            <div className="bg-white text-[#fc7643] rounded-full p-1.5 flex items-center justify-center transition-transform group-hover:rotate-45">
                                 <ArrowUpRight size={20} strokeWidth={2.5} />
                             </div>
                             Organizar mis invitados
@@ -189,8 +189,8 @@ export default function LiveExperienceSection() {
                     <div className="w-full relative py-8 border-t border-white/10 flex items-center overflow-hidden bg-black/20 px-0 mt-auto">
 
                         {/* Gradientes laterales - Fades *right at the edge* against the rounded box */}
-                        <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-[#113227] to-transparent z-10 pointer-events-none" />
-                        <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#113227] to-transparent z-10 pointer-events-none" />
+                        <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-[#ce5a4e] to-transparent z-10 pointer-events-none" />
+                        <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#ce5a4e] to-transparent z-10 pointer-events-none" />
 
                         <motion.div
                             className="flex gap-4 whitespace-nowrap min-w-max"
@@ -202,7 +202,7 @@ export default function LiveExperienceSection() {
                                     key={idx}
                                     className="flex items-center gap-2.5 bg-white/5 border border-white/10 px-6 py-3 rounded-full backdrop-blur-sm"
                                 >
-                                    <CheckCircle2 size={18} className="text-[#eef67a]" />
+                                    <CheckCircle2 size={18} className="text-[#fcdbd0]" />
                                     <span className="text-white/90 text-sm md:text-base font-semibold tracking-wide">{item}</span>
                                 </div>
                             ))}

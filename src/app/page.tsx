@@ -10,10 +10,11 @@ import MeetTeamSection from '@/components/MeetTeamSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import FaqSection from '@/components/FaqSection';
 import Footer from '@/components/Footer';
+import PricingSection from '@/components/PricingSection';
 
 export default function Home() {
   return (
-    <main className="relative w-full bg-[#f1f7ed]">
+    <main className="relative w-full bg-[#fff4ee]">
       <Navbar />
       <Hero />
       <VideoReveal />
@@ -23,6 +24,7 @@ export default function Home() {
       <FeaturesSection />
       <ExplainControl />
       <AutomatedSystem />
+      <PricingSection />
       <MeetTeamSection />
       <FaqSection />
       <Footer />

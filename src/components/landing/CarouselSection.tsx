@@ -16,21 +16,21 @@ const slides = [
     title: "La Forma Fácil de Gestionar Invitados",
     description:
       "Simplifica la gestión de tus invitados: crea listas, envía invitaciones digitales y lleva el control sin complicaciones.",
-    image: "/images/carousel-easy.png",
+    image: "/imagenes-horizontales/QR-EVENTOCLIC.png",
     cta: "Agenda una Demo",
   },
   {
     title: "La Forma Segura de Controlar el Acceso",
     description:
       "Mantén tu evento libre de colados con verificación por QR, validación en tiempo real y alertas instantáneas.",
-    image: "/images/carousel-secure.png",
+    image: "/imagenes-horizontales/MENSAJES-EVENTOCLIC.png",
     cta: "Agenda una Demo",
   },
   {
     title: "La Forma Rápida de Organizar Eventos",
     description:
       "Potencia tu organización con herramientas de gestión modernas que se adaptan a cualquier tipo de evento social.",
-    image: "/images/carousel-fast.png",
+    image: "/imagenes-horizontales/GESTION-CENTRALIZADA-EVENTOCLIC.png",
     cta: "Agenda una Demo",
   },
 ];

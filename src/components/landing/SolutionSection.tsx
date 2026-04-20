@@ -17,21 +17,21 @@ const features = [
     title: "Códigos QR",
     description:
       "Genera códigos QR únicos para cada invitado. Escanea al llegar y valida su acceso al instante con la app de lectura rápida.",
-    image: "/images/carousel-easy.png", // Reusing carousel images for demo
+    image: "/imagenes-horizontales/QR-EVENTOCLIC.png", // Reusing carousel images for demo
   },
   {
     icon: "💌",
     title: "Invitaciones Digitales",
     description:
       "Envía invitaciones personalizadas por WhatsApp con toda la información del evento y código de acceso seguro y encriptado.",
-    image: "/images/carousel-secure.png",
+    image: "/imagenes-horizontales/MENSAJES-EVENTOCLIC.png",
   },
   {
     icon: "📊",
     title: "Control en Tiempo Real",
     description:
       "Monitorea en vivo quién ha llegado, cuántos faltan y detecta cualquier intento de acceso no autorizado directamente desde el dashboard.",
-    image: "/images/carousel-fast.png",
+    image: "/imagenes-horizontales/GESTION-CENTRALIZADA-EVENTOCLIC.png",
   },
 ];
 
@@ -92,7 +92,7 @@ export default function SolutionSection() {
               style={{
                 marginBottom: 24,
                 background: "rgba(200, 217, 111, 0.15)",
-                borderColor: "rgba(200, 217, 111, 0.3)",
+                borderColor: "rgba(252, 118, 67, 0.2)",
                 color: "var(--lime-accent)",
                 display: "inline-flex",
               }}

@@ -23,20 +23,20 @@ export default function ProblemSection() {
     const imageScale = useTransform(smoothProgress, [0, 1], [1.1, 1]);
 
     return (
-        <section className="relative z-20 bg-[#16554a] w-full pb-32 pt-12 text-white" ref={sectionRef}>
+        <section className="relative z-20 bg-[#ce5a4e] w-full pb-32 pt-12 text-white" ref={sectionRef}>
             <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
 
                 {/* Top Banner */}
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-white/20 pb-10">
                     <p className="text-white font-sans text-2xl lg:text-3xl font-light tracking-wide max-w-xl leading-tight">
-                        Cuando no tienes claridad sobre tus invitados, todo el evento pierde orden… y <span className="font-semibold text-[#E07A5F]">presupuesto.</span>
+                        Cuando no tienes claridad sobre tus invitados, todo el evento pierde orden… y <span className="font-serif italic font-medium text-white">presupuesto.</span>
                     </p>
 
-                    {/* CTA #2 SECUNDARIO */}
-                    <button className="bg-white/10 border border-white/30 text-white px-6 py-2.5 rounded-full flex items-center gap-3 font-semibold text-sm hover:bg-white/20 transition-all group shrink-0 cursor-pointer backdrop-blur-sm">
+                    {/* Botón Ver cómo funciona con estilo primario */}
+                    <button className="bg-white text-[#ce5a4e] px-6 py-2.5 rounded-full flex items-center gap-3 font-bold hover:-translate-y-1 transition-transform group shadow-lg shrink-0 cursor-pointer">
                         Ver cómo funciona
-                        <div className="text-[#E07A5F] transition-transform group-hover:rotate-45">
-                            <ArrowUpRight size={18} strokeWidth={2.5} />
+                        <div className="bg-[#ce5a4e] text-white rounded-full p-1.5 flex items-center justify-center transition-transform group-hover:rotate-45">
+                            <ArrowUpRight size={16} strokeWidth={2.5} />
                         </div>
                     </button>
                 </div>
@@ -68,7 +68,7 @@ export default function ProblemSection() {
                                     transition={{ duration: 0.5, delay: idx * 0.1 }}
                                     className="flex items-start gap-4 text-lg md:text-xl font-sans text-white/90"
                                 >
-                                    <XCircle size={24} className="text-[#E07A5F] shrink-0 mt-0.5" strokeWidth={1.5} />
+                                    <XCircle size={24} className="text-white/70 shrink-0 mt-0.5" strokeWidth={1.5} />
                                     <span>{point}</span>
                                 </motion.li>
                             ))}
@@ -80,10 +80,10 @@ export default function ProblemSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.4 }}
-                            className="bg-black/20 border-l-4 border-[#E07A5F] p-5 rounded-r-2xl mb-12 backdrop-blur-md"
+                            className="bg-black/20 border-l-4 border-white/50 p-5 rounded-r-2xl mb-12 backdrop-blur-md"
                         >
                             <div className="flex gap-3 items-start">
-                                <AlertCircle size={24} className="text-[#E07A5F] shrink-0 mt-1" strokeWidth={2} />
+                                <AlertCircle size={24} className="text-white/80 shrink-0 mt-1" strokeWidth={2} />
                                 <div>
                                     <p className="text-white/80 text-sm md:text-base font-sans mb-1">
                                         Y cuando se acerca la fecha del evento, aún queda una pregunta sin respuesta:
@@ -96,13 +96,14 @@ export default function ProblemSection() {
                         </motion.div>
 
                         {/* CTA #1 PRIMARIO */}
-                        <button className="bg-white text-[#16554a] px-8 py-3.5 rounded-full flex items-center gap-3 text-lg font-bold hover:-translate-y-1 transition-transform group shadow-xl w-fit cursor-pointer">
+                        <button className="bg-white text-[#ce5a4e] px-8 py-3.5 rounded-full flex items-center gap-3 text-lg font-bold hover:-translate-y-1 transition-transform group shadow-xl w-fit cursor-pointer">
                             Organizar mis invitados
-                            <div className="bg-[#E07A5F] text-white rounded-full p-1.5 flex items-center justify-center transition-transform group-hover:rotate-45">
+                            <div className="bg-[#ce5a4e] text-white rounded-full p-1.5 flex items-center justify-center transition-transform group-hover:rotate-45">
                                 <ArrowUpRight size={18} strokeWidth={2.5} />
                             </div>
                         </button>
                     </div>
+                    {/* FIN Left Typography Column */}
 
                     {/* Right Image Column (5 cols wide) */}
                     <div className="lg:col-span-5 w-full relative">
@@ -112,16 +113,20 @@ export default function ProblemSection() {
                                 className="w-full h-full origin-center"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop"
+                                    src="/imagenes-verticales/1.png"
                                     alt="Persona organizando invitados en un evento"
                                     className="w-full h-full object-cover"
                                 />
                             </motion.div>
                         </div>
                     </div>
+                    {/* FIN Right Image Column */}
 
                 </div>
+                {/* FIN Main Content Grid */}
+
             </div>
+            {/* FIN Contenedor max-w */}
         </section>
     );
 }

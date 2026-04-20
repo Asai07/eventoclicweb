@@ -1,34 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  /* Primary palette - sage/lime green inspired by joinimmediate.com */
-  --sage-50: #F7F9EE;
-  --sage-100: #ECF2DC;
-  --sage-200: #D8E5BF;
-  --sage-300: #C8D96F;
-  --sage-400: #B8CC55;
+  /* Primary palette - warm terracotta tones */
+  --sage-50: #FFFDFB;
+  --sage-100: #FFF4EE; /* Light warm background */
+  --sage-200: #FCE5DB;
+  --sage-300: #F9CBB9;
+  --sage-400: #F4A28A;
 
-  /* Dark forest green */
-  --forest-900: #132A1E;
-  --forest-800: #1C382A;
-  --forest-700: #294D3B;
+  /* Primary color: Terracotta */
+  --forest-900: #ce5a4e; /* Primary main */
+  --forest-800: #ba4b3e; /* Primary hover */
+  --forest-700: #a34339; /* Primary dark */
 
-  /* Accent lime */
-  --lime-accent: #E0E67E;
-  --lime-light: #D2E9C3;
-  --lime-bg: #EAEFCD;
+  /* Accent color: Orange */
+  --lime-accent: #fc7643;
+  --lime-light: #ffd0bf;
+  --lime-bg: #fff0eb;
 
   /* Neutrals */
   --white: #FFFFFF;
-  --text-dark: #0D1612;
-  --text-muted: #334A40;
-  --text-light: #6A8679;
+  --text-dark: #2A1714;
+  --text-muted: #573E3A;
+  --text-light: #94716B;
 
   /* Functional */
   --background: var(--sage-100);
   --foreground: var(--text-dark);
   --card-bg: #FFFFFF;
-  --card-border: rgba(26, 43, 43, 0.08);
+  --card-border: rgba(206, 90, 78, 0.15);
 
   /* Font configuration handled in @theme inline below */
 
@@ -122,9 +122,9 @@
   font-family: var(--font-sans);
   font-size: 0.85rem;
   font-weight: 500;
-  background: rgba(200, 217, 111, 0.3);
+  background: rgba(252, 118, 67, 0.2);
   color: var(--text-dark);
-  border: 1px solid rgba(200, 217, 111, 0.5);
+  border: 1px solid rgba(252, 118, 67, 0.4);
   backdrop-filter: blur(4px);
 }
 
@@ -246,10 +246,10 @@
 /* ==================== GLASSMORPHISM ==================== */
 
 .glass {
-  background: rgba(237, 242, 216, 0.7);
+  background: rgba(255, 244, 238, 0.7);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(200, 217, 111, 0.3);
+  border: 1px solid rgba(252, 118, 67, 0.2);
 }
 
 /* ==================== CONTAINER ==================== */

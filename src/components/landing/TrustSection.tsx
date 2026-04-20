@@ -78,7 +78,7 @@ export default function TrustSection() {
           style={{
             position: "absolute",
             inset: 0,
-            backgroundImage: "url(/images/hero.png)",
+            backgroundImage: "url(/imagenes-horizontales/11.png)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             opacity: 0.08,
@@ -133,7 +133,7 @@ export default function TrustSection() {
                 style={{
                   marginBottom: 24,
                   background: "rgba(200, 217, 111, 0.15)",
-                  borderColor: "rgba(200, 217, 111, 0.3)",
+                  borderColor: "rgba(252, 118, 67, 0.2)",
                   color: "var(--lime-accent)",
                 }}
               >

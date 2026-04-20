@@ -40,13 +40,13 @@ function AccordionItem({ item, isOpen, onClick }: { item: typeof FAQ_DATA[0], is
         <div className="mb-4">
             <button
                 onClick={onClick}
-                className={`w-full flex items-center justify-between text-left p-5 md:p-6 transition-all rounded-2xl cursor-pointer border ${isOpen ? 'bg-white border-transparent shadow-lg' : 'bg-transparent border-[#113227]/10 hover:bg-white/50'}`}
+                className={`w-full flex items-center justify-between text-left p-5 md:p-6 transition-all rounded-2xl cursor-pointer border ${isOpen ? 'bg-white border-transparent shadow-lg' : 'bg-transparent border-[#ce5a4e]/10 hover:bg-white/50'}`}
             >
                 <div className="flex items-center gap-4 md:gap-6">
-                    <div className={`${isOpen ? 'text-[#E07A5F]' : 'text-[#113227]'} shrink-0 transition-colors`}>
+                    <div className={`${isOpen ? 'text-[#fc7643]' : 'text-[#ce5a4e]'} shrink-0 transition-colors`}>
                         {isOpen ? <Minus size={20} strokeWidth={2} /> : <Plus size={20} strokeWidth={2} />}
                     </div>
-                    <span className="text-[#113227] font-serif font-medium text-lg md:text-xl">
+                    <span className="text-[#ce5a4e] font-serif font-medium text-lg md:text-xl">
                         {item.question}
                     </span>
                 </div>
@@ -60,7 +60,7 @@ function AccordionItem({ item, isOpen, onClick }: { item: typeof FAQ_DATA[0], is
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="overflow-hidden"
                     >
-                        <div className="p-5 md:p-6 pt-0 mt-2 bg-transparent text-gray-600 leading-relaxed text-base border-l-2 border-[#E07A5F] ml-8 mb-2">
+                        <div className="p-5 md:p-6 pt-0 mt-2 bg-transparent text-gray-600 leading-relaxed text-base border-l-2 border-[#fc7643] ml-8 mb-2">
                             {item.answer}
                         </div>
                     </motion.div>
@@ -78,7 +78,7 @@ export default function FaqSection() {
     };
 
     return (
-        <section className="relative w-full bg-[#f1f7ed] py-24 md:py-32">
+        <section className="relative w-full bg-[#fff4ee] py-24 md:py-32">
             <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
 
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
@@ -89,9 +89,9 @@ export default function FaqSection() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="inline-flex items-center gap-2 bg-[#eef67a] text-[#113227] px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 shadow-sm"
+                            className="inline-flex items-center gap-2 bg-[#fcdbd0] text-[#ce5a4e] px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 shadow-sm"
                         >
-                            <HelpCircle size={16} className="text-[#E07A5F]" />
+                            <HelpCircle size={16} className="text-[#fc7643]" />
                             FAQ
                         </motion.div>
 
@@ -100,7 +100,7 @@ export default function FaqSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="text-[#113227] font-serif text-5xl md:text-[4rem] leading-[1.05] tracking-tight mb-6"
+                            className="text-[#ce5a4e] font-serif text-5xl md:text-[4rem] leading-[1.05] tracking-tight mb-6"
                         >
                             ¿Tienes dudas?<br />Aquí las resolvemos.
                         </motion.h2>
@@ -110,7 +110,7 @@ export default function FaqSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
-                            className="text-[#113227]/70 text-base md:text-lg max-w-sm leading-relaxed font-medium"
+                            className="text-[#ce5a4e]/70 text-base md:text-lg max-w-sm leading-relaxed font-medium"
                         >
                             Encuentra las respuestas a las preguntas más comunes que tienen los anfitriones al utilizar Evento Clic.
                         </motion.p>

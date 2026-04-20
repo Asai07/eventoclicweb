@@ -25,11 +25,11 @@ export default function VideoReveal() {
                 style={{ scale }}
                 className="relative z-20 w-full max-w-[1100px] mx-auto px-4 pb-20 will-change-transform"
             >
-                <div className="aspect-[16/9] bg-[#0f1c19] rounded-[2rem] overflow-hidden shadow-2xl relative">
+                <div className="aspect-[16/9] bg-[#2a1714] rounded-[2rem] overflow-hidden shadow-2xl relative">
                     <video
                         autoPlay loop muted playsInline
                         className="w-full h-full object-cover opacity-90"
-                        poster="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+                        poster="/imagenes-horizontales/9.png"
                     >
                         <source src="https://www.pexels.com/es-es/download/video/1394254/" type="video/mp4" />
                     </video>
@@ -38,7 +38,7 @@ export default function VideoReveal() {
 
             {/* CONTENEDOR DE LA CURVA VERDE OSCURO */}
             <div className="absolute top-[30%] left-0 w-full h-[150%] overflow-hidden z-10 pointer-events-none">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[250%] md:w-[120%] h-[1500px] bg-[#16554a] rounded-t-[100%]"></div>
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[250%] md:w-[120%] h-[1500px] bg-[#ce5a4e] rounded-t-[100%]"></div>
             </div>
         </div>
     );

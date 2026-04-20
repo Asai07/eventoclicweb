@@ -3,34 +3,30 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const FOOTER_LINKS = [
     {
         title: "Plataforma",
-        links: ["Funciones", "Centro de Control", "Recepción QR", "Precios"]
+        links: ["Soluciones", "Cómo funciona", "Precios"]
     },
     {
-        title: "Compañía",
-        links: ["Sobre Nosotros", "Contacto", "Únete al equipo", "Prensa"]
-    },
-    {
-        title: "Recursos",
-        links: ["Blog de Eventos", "Casos de Éxito", "Centro de Ayuda", "Guías de Uso"]
+        title: "Soporte",
+        links: ["Contacto", "Preguntas Frecuentes"]
     },
     {
         title: "Legal",
-        links: ["Aviso de Privacidad", "Términos y Condiciones", "Política de Cookies"]
+        links: ["Aviso de Privacidad", "Términos y Condiciones"]
     }
 ];
 
 export default function Footer() {
     return (
-        <footer className="relative w-full bg-[#113227] text-white pt-24 pb-8 overflow-hidden rounded-t-[3rem] md:rounded-t-[4rem] -mt-10 z-30">
+        <footer className="relative w-full bg-[#ce5a4e] text-[#FAFAF9] pt-24 pb-8 overflow-hidden rounded-t-[3rem] md:rounded-t-[4rem] -mt-10 z-30">
             <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
 
-                {/* Sección Superior: CTA & Newsletter */}
                 <div className="flex flex-col lg:flex-row justify-between items-start gap-16 mb-24">
-                    {/* Izquierda: Gran CTA */}
+
                     <div className="max-w-xl">
                         <motion.h2
                             initial={{ opacity: 0, y: 30 }}
@@ -48,16 +44,15 @@ export default function Footer() {
                             transition={{ duration: 0.6, delay: 0.2 }}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-[#E07A5F] hover:bg-[#c96950] transition-colors text-white rounded-full pl-6 pr-4 py-3 flex items-center gap-4 font-bold cursor-pointer shadow-xl text-lg group"
+                            className="bg-white hover:bg-[#FAFAF9] transition-colors text-[#ce5a4e] rounded-full pl-7 pr-3 py-3 flex items-center gap-5 font-bold cursor-pointer shadow-xl text-lg group"
                         >
-                            Crear mi cuenta
-                            <div className="bg-white text-[#E07A5F] rounded-full p-2 flex items-center justify-center transition-transform group-hover:rotate-45">
+                            Organizar mi evento
+                            <div className="bg-[#ce5a4e] text-white rounded-full p-2 flex items-center justify-center transition-transform group-hover:rotate-45">
                                 <ArrowUpRight size={20} strokeWidth={2.5} />
                             </div>
                         </motion.button>
                     </div>
 
-                    {/* Derecha: Newsletter */}
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -65,25 +60,24 @@ export default function Footer() {
                         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                         className="w-full lg:w-[400px] flex flex-col gap-6"
                     >
-                        <h4 className="text-white text-xl font-medium tracking-wide">Únete a nuestro newsletter</h4>
-                        <p className="text-white/60 leading-relaxed font-medium">
-                            Recibe tips exclusivos de organización, tendencias de eventos y actualizaciones de la plataforma directamente en tu correo.
+                        <h4 className="text-white text-xl font-medium tracking-wide">Únete a la lista VIP</h4>
+                        <p className="text-white/80 leading-relaxed font-medium">
+                            Recibe tips exclusivos de organización y novedades de nuestra plataforma. Sin spam, lo prometemos.
                         </p>
                         <div className="relative mt-4">
                             <input
                                 type="email"
                                 placeholder="Tu correo electrónico"
-                                className="w-full bg-transparent border-b border-white/20 pb-4 text-base text-white placeholder-white/40 focus:outline-none focus:border-[#eef67a] transition-colors"
+                                className="w-full bg-transparent border-b border-white/40 pb-4 text-base text-white placeholder-white/60 focus:outline-none focus:border-white transition-colors"
                             />
-                            <button className="absolute right-0 top-0 text-white/50 hover:text-[#eef67a] transition-colors pb-4 uppercase tracking-widest text-xs font-bold cursor-pointer">
+                            <button className="absolute right-0 top-0 text-white hover:opacity-70 transition-opacity pb-4 uppercase tracking-widest text-xs font-bold cursor-pointer">
                                 Suscribirme
                             </button>
                         </div>
                     </motion.div>
                 </div>
 
-                {/* Sección Media: Grid de Enlaces */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-24 border-t border-white/10 pt-16">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-12 mb-24 border-t border-white/20 pt-16">
                     {FOOTER_LINKS.map((col, idx) => (
                         <motion.div
                             key={col.title}
@@ -93,7 +87,7 @@ export default function Footer() {
                             transition={{ delay: idx * 0.1, duration: 0.6 }}
                             className="flex flex-col gap-6"
                         >
-                            <h5 className="font-bold text-[#eef67a]/70 uppercase tracking-widest text-xs">
+                            <h5 className="font-bold text-white/60 uppercase tracking-widest text-xs">
                                 {col.title}
                             </h5>
                             <ul className="flex flex-col gap-4">
@@ -101,11 +95,10 @@ export default function Footer() {
                                     <li key={link}>
                                         <Link
                                             href="#"
-                                            className="text-white/80 hover:text-white transition-colors text-base md:text-lg relative group inline-flex font-medium"
+                                            className="text-white/90 hover:text-white transition-colors text-base relative group inline-flex font-medium"
                                         >
                                             <span className="relative z-10">{link}</span>
-                                            {/* Subrayado animado estilo Awwwards */}
-                                            <span className="absolute left-0 bottom-0 w-full h-[1px] bg-[#E07A5F] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
+                                            <span className="absolute left-0 bottom-0 w-full h-[1px] bg-white origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
                                         </Link>
                                     </li>
                                 ))}
@@ -114,31 +107,32 @@ export default function Footer() {
                     ))}
                 </div>
 
-                {/* Sección Inferior: Tipografía Masiva & Copyright */}
-                <div className="flex flex-col items-center border-t border-white/10 pt-12 relative">
+                <div className="flex flex-col items-center border-t border-white/20 pt-12 relative">
 
-                    {/* Fila superior de copyright antes del texto masivo */}
-                    <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 mb-12 text-white/50 text-sm font-medium">
-                        <p>© {new Date().getFullYear()} Evento Clic. Todos los derechos reservados.</p>
+                    <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 mb-16 text-white text-sm font-medium">
+                        <p className="text-white/80">© {new Date().getFullYear()} Evento Clic. Todos los derechos reservados.</p>
                         <div className="flex items-center gap-6">
-                            <Link href="#" className="hover:text-[#eef67a] transition-colors">Instagram</Link>
-                            <Link href="#" className="hover:text-[#eef67a] transition-colors">Facebook</Link>
-                            <Link href="#" className="hover:text-[#eef67a] transition-colors">TikTok</Link>
+                            <Link href="#" className="hover:opacity-70 transition-opacity">Instagram</Link>
+                            <Link href="#" className="hover:opacity-70 transition-opacity">Facebook</Link>
+                            <Link href="#" className="hover:opacity-70 transition-opacity">TikTok</Link>
                         </div>
                     </div>
 
-                    {/* Tipografía Masiva */}
                     <motion.div
-                        initial={{ opacity: 0, y: 50 }}
+                        initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                        className="w-full flex justify-center overflow-hidden"
+                        className="w-full flex justify-center py-4"
                     >
-                        {/* Texto responsivo ajustado para EVENTO CLIC */}
-                        <h1 className="font-serif text-[12vw] md:text-[11vw] leading-none tracking-tight text-[#eef67a] select-none text-center">
-                            EVENTO CLIC
-                        </h1>
+                        <Image
+                            src="/logo-mievento.png"
+                            alt="Evento Clic"
+                            width={300}
+                            height={100}
+                            quality={100}
+                            className="w-full max-w-[220px] md:max-w-[280px] object-contain opacity-80 hover:opacity-100 transition-opacity duration-500 brightness-0 invert"
+                        />
                     </motion.div>
                 </div>
 

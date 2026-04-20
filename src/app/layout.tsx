@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
-      <body className={`bg-[#f1f7ed] text-[#1a3831] ${montserrat.variable} ${veryVogue.variable} font-sans antialiased`}>
+      <body className={`bg-[#fff4ee] text-[#2a1714] ${montserrat.variable} ${veryVogue.variable} font-sans antialiased`}>
         <SmoothScroll>
           {children}
         </SmoothScroll>

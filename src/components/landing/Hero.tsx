@@ -142,7 +142,7 @@ export default function Hero() {
         >
           <div ref={imageRef} style={{ width: "100%", height: "115%", position: "absolute", top: "-5%" }}>
             <Image
-              src="/images/hero.png"
+              src="/imagenes-horizontales/11.png"
               alt="Sistema Anti-Colados en acción - Control digital de invitados"
               fill
               style={{ objectFit: "cover" }}
